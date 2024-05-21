@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Play:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    box-sizing: border-box;
+}
+*{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    width: 2px;}
+::-webkit-scrollbar-track {
+    background-color:rgb(255, 255, 255); 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    background-color: rgba(237, 249, 252, 0.158);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    /* color: white; */
+    margin: 0%;
+}
+
+.nav div {
+    margin: 15px;
+}
+
+.nav h1 {
+    margin-left: 30px;
+    color: yellow;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.section1 {
+    margin-top: 60px;
+    position: absolute;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 80px;
+    top: 100px;
+     z-index: 100;
+}
+.second{
+    margin-top: 60px;
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    /* justify-content: flex-end; */
+    float: right;
+    left: 45%;
+    top: 800px;
+    /* z-index: 100; */
+}
+.third{
+    position: absolute;
+    left: 5%;
+    top: 230%
+}
+.fourth{
+    position: absolute;
+    top: 330%;
+    text-align: right;
+    left: 55%;
+}
+
+.section1 h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.section1 p{
+    font-size: 18px;
+    color: white;
+}
+.section2 img{
+    margin: 0%;
+    width: 100%;
+    height:650px;
+    object-fit: cover;
+}
+.img-fluid{
+    filter: brightness(0.6);
+}
+.whatsapp{
+    position: absolute;
+    right: 0px;
+    margin: 0%;
+    top: 70%;
+   
+}
+.carousel{
+    padding: 20px;
+   width: 800px;
+   height: 400px;
+   margin-bottom: 80px;
+}
+.carousel img{
+    border-radius: 10px;
+}
+.section4{
+    background-color: #c9c9c9;
+    margin-top: 40px;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    object-fit: cover;
+}
+.design{
+    margin-left: 80px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; /* Set your desired width */
+    height: 10px; /* Set your desired height */
+    /* background-size: 30px 30px; Match the background size to the new dimensions */
+    position: absolute;
+    top: 55%;
+
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: #fff; /* Change the arrow color */
+    font-size: 20px; /* Increase the size of the arrow */
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: -30px;
+    margin-top: 50px;
+    background-color: #f8f8f8;
+    padding: 50px;
+
+}
+.services .services-one{
+    width: 400px;
+    background-color: rgb(254, 204, 42);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.footer {
+    background-color: #343a40;
+    padding: 20px;
+    color: #ffffff;
+}
+.Address{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+.footer button{
+    /* border: 2px solid #ffffff; */
+    border: none;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    transition: transform 0.3s, border-color 0.3s;
+    background-color: #00ff6a;;
+}
+.footer i{
+    font-size: 30px;
+    color: white;
+    border-color: white;
+}
+
+.footer button i:hover {
+    transform: scale(1.1);
+    border-color: #00e676;
+}
+.scrolled {
+    background-color: #333; /* New background color when scrolled */
+}
+.scrolled .nav h1{
+    color: white;
+}
+
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 10px;
+        padding: 0 10px;
+    }
+
+    /* .main {
+        padding: 10px;
+    } */
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        height: 50px;
+        width: 100%;
+        margin: 0%;
+        margin-top: -1px;
+
+    }
+
+    nav h1, nav h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .nav h1{
+        margin-left: -10px;
+    }
+    .section1, .section2, .section4, .services {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .section1 h1, .section2 h1, .section4 h1, .services h1 {
+       font-size: 15px;
+        
+    }
+    .section1 {
+        width: 70%;
+        left: 15px;
+        top: -75px;
+    }
+    .second{
+        margin-top: 60px;
+        position: absolute;
+        width: 70%;
+        left: 25%;
+        top: 150px;
+        z-index: 1000;
+    }
+    .third{
+        margin-top: 60px;
+        position: absolute;
+        width: 70%;
+        /* left: 5%; */
+        top: 380px;
+        z-index: 1000;
+    }
+    .fourth{
+        position: absolute;
+        top: 600px;
+        left: 25%;
+        /* text-align: right; */
+    }
+
+    .section1 p, .section2 p, .section4 p, .services p {
+        font-size: 11px;
+    }
+
+    .section2 img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel{
+       width: 380px;
+       height: 800px;
+       margin-bottom: 80px;
+       margin-left: -30px;
+    }
+    .carousel img{
+        border-radius: 10px;
+    }
+    .section4{
+        background-color: #c9c9c9;
+        width: 320px;
+        margin-top: 15px;
+        margin-left: 10px;
+        display:block;
+        height: 140px;
+        align-items:start;
+        justify-content: center;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    width: 10px; /* Set your desired width */
+    height: 10px; /* Set your desired height */
+    /* background-size: 30px 30px; Match the background size to the new dimensions */
+    position: absolute;
+    top: 90px;
+    padding: 10px;
+
+}
+    
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+        color: #ff0000; /* Change the arrow color */
+        font-size: 20px; /* Increase the size of the arrow */
+    }
+    .services{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: -30px;
+        margin-top: 50px;
+
+        background-color: #f8f8f8;
+        padding: 50px;
+    
+    }
+    .services .services-one{
+        width: 200px;
+        background-color: rgb(254, 204, 42);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0px 0px 2px 0px black;
+    }
+    
+    .services-one {
+        width: 100%;
+        height: 50px
+        /* margin-bottom: 20px; */
+    }
+
+    .services-one ul {
+        padding-left: 20px;
+    }
+
+    footer .footer {
+        padding: 10px;
+    }
+
+    footer .Address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .Address h3 {
+        font-size: 16px;
+    }
+
+    footer .Address p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    footer .Address button {
+        font-size: 14px;
+    }
+
+    footer .Address a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .Address i {
+        font-size: 24px;
+    }
+}
+
