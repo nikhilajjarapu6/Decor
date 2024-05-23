@@ -372,7 +372,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
     .third{
         margin-top: 60px;
         position: absolute;
@@ -383,7 +383,7 @@ body {
     }
     .fourth{
         position: absolute;
-        top: 400px;
+        top: 300px;
         left: 25%;
         /* text-align: right; */
     }
