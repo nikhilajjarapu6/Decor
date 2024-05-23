@@ -372,12 +372,12 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .third{
         margin-top: 60px;
         position: absolute;
         width: 70%;
-        /* left: 5%; */
+        left: 25%;
         top: 280px;
         z-index: 1000;
     }
