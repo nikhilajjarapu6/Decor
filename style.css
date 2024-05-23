@@ -372,7 +372,7 @@ body {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1016px) {
+@media screen and (max-width: 916px) {
     .third{
 /*          display: none; */
         margin-top: 60px;
