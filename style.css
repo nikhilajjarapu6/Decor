@@ -372,3 +372,20 @@ body {
     }
 }
 
+@media only screen and (min-width: 420px) {
+    .third{
+        margin-top: 60px;
+        position: absolute;
+        width: 70%;
+        /* left: 5%; */
+        top: 180px;
+        z-index: 1000;
+    }
+    .fourth{
+        position: absolute;
+        top: 400px;
+        left: 25%;
+        /* text-align: right; */
+    }
+}
+
